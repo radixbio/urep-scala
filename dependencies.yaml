@@ -1,0 +1,146 @@
+options:
+  buildHeader: [ "load(\"@io_bazel_rules_scala//scala:scala_import.bzl\", \"scala_import\")",
+    "load(\"@io_bazel_rules_scala//scala:scala.bzl\", \"scala_library\")" ]
+  languages: [ "java", "scala:2.12.8" ]
+  resolvers:
+    - id: "mavencentral"
+      type: "default"
+      url: https://repo.maven.apache.org/maven2/
+    - id: "confluent"
+      type: "default"
+      url: https://packages.confluent.io/maven/
+  strictVisibility: true
+
+dependencies:
+  com.lihaoyi:
+    ammonite_2.12.8:
+      lang: scala/unmangled
+      version: "2.2.0"
+    os-lib:
+      lang: scala
+      version: "0.7.1"
+
+  com.typesafe:
+    config:
+      lang: java
+      version: "1.4.0"
+
+  com.typesafe.akka:
+    akka:
+      lang: scala
+      modules: [ "actor", "actor-testkit-typed", "actor-typed", "cluster-typed",
+        "persistence-typed", "stream-typed", "testkit" ]
+      version: "2.6.8"
+    akka-http:
+      lang: scala
+      version: "10.1.11"
+
+  de.heikoseeberger:
+    akka-http-circe:
+      lang: scala
+      version: "1.29.1"
+
+  dev.zio:
+    zio:
+      lang: scala
+      version: "1.0.3"
+    zio-interop-cats:
+      lang: scala
+      version: "2.2.0.1"
+
+  io.7mind.izumi:
+    fundamentals-platform:
+      lang: scala
+      version: "0.9.17"
+    logstage:
+      lang: scala
+      modules: [ "adapter-slf4j", "api", "config", "core", "di", "rendering-circe", "sink-slf4j" ]
+      version: "0.9.17"
+
+  io.circe:
+    circe:
+      lang: scala
+      modules: [ "core", "fs2", "generic", "generic-extras", "literal", "optics", "parser" ]
+      version: "0.13.0"
+    circe-derivation:
+      lang: scala
+      version: "0.13.0-M4"
+
+  org.http4s:
+    http4s:
+      lang: scala
+      modules: [ "blaze-client", "blaze-server", "circe", "core", "dsl" ]
+      version: "0.21.2"
+    parboiled:
+      lang: scala
+      version: "2.0.1"
+
+  org.scala-lang:
+    scalap:
+      lang: java
+      version: "2.12.10"
+
+  org.scala-lang.modules:
+    scala-parser-combinators:
+      lang: scala
+      version: "1.1.2"
+
+  org.scalacheck:
+    scalacheck:
+      lang: scala
+      version: "1.14.1"
+
+  org.scalactic:
+    scalactic:
+      lang: scala
+      version: "3.0.8"
+
+  org.scalameta:
+    scalameta:
+      lang: scala
+      version: "4.1.0"
+
+  org.scalatest:
+    scalatest:
+      lang: scala
+      version: "3.0.8"
+
+  org.scalatestplus:
+    scalatestplus-scalacheck:
+      lang: scala
+      version: "3.1.0.0-RC2"
+
+  org.scalaz:
+    scalaz-core:
+      lang: scala
+      version: "7.3.2"
+
+  org.typelevel:
+    cats:
+      lang: scala
+      modules: [ "core", "effect" ]
+      version: "2.2.0"
+    squants:
+      lang: scala
+      version: "1.3.0"
+
+replacements:
+  org.scala-lang:
+    scala-compiler:
+      lang: scala/unmangled
+      target: "@io_bazel_rules_scala_scala_compiler//:io_bazel_rules_scala_scala_compiler"
+    scala-library:
+      lang: scala/unmangled
+      target: "@io_bazel_rules_scala_scala_library//:io_bazel_rules_scala_scala_library"
+    scala-reflect:
+      lang: scala/unmangled
+      target: "@io_bazel_rules_scala_scala_reflect//:io_bazel_rules_scala_scala_reflect"
+
+  org.scala-lang.modules:
+    scala-parser-combinators:
+      lang: scala
+      target:
+        "@io_bazel_rules_scala_scala_parser_combinators//:io_bazel_rules_scala_scala_parser_combinators"
+    scala-xml:
+      lang: scala
+      target: "@io_bazel_rules_scala_scala_xml//:io_bazel_rules_scala_scala_xml"

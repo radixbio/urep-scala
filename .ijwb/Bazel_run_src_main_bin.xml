@@ -1,0 +1,1 @@
+<configuration name="Bazel run src:main-bin" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command"><blaze-settings handler-id="BlazeJavaRunConfigurationHandlerProvider" blaze-command="run" kind="scala_binary"><blaze-target>//src:main-bin</blaze-target></blaze-settings><method v="2"><option name="Blaze.BeforeRunTask" enabled="true" /></method></configuration>

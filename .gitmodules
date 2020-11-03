@@ -1,0 +1,3 @@
+[submodule "intellij-bazel"]
+	path = tools/intellij-bazel
+	url = https://github.com/bazelbuild/intellij.git

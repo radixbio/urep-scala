@@ -1,0 +1,4 @@
+build -s --sandbox_debug --verbose_failures
+run -s --sandbox_debug --verbose_failures
+build --strategy=Scalac=worker
+build --worker_sandboxing
