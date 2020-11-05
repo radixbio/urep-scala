@@ -1,4 +1,4 @@
-load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive", "http_file")
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive", "http_file", "http_jar")
 load("@bazel_tools//tools/build_defs/repo:jvm.bzl", "jvm_maven_import_external")
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository", "new_git_repository")
 
@@ -158,3 +158,24 @@ rules_pkg_dependencies()
 
 _scala_image_repos()
 
+http_jar(
+    name = "scala_stm",
+    url = "https://oss.sonatype.org/content/repositories/releases/org/scala-stm/scala-stm_2.12/0.8/scala-stm_2.12-0.8.jar",
+    sha256 = "307d61bbbc4e6ed33881646f23140ac73d71a508452abdbb8da689e64a1e4d93"
+)
+
+new_git_repository(name = "rediscala",
+                   remote = "https://github.com/itdaniher/rediscala.git",
+                   branch = "master",
+                   verbose = True,
+                   workspace_file = "@//:WORKSPACE",
+                   build_file_content = """
+load("@io_bazel_rules_scala//scala:scala.bzl", "scala_library")
+package(default_visibility = ["//visibility:public"])
+scala_library(
+    name = "rediscala",
+    srcs = glob(["src/main/scala/redis/*.scala", "src/main/scala/redis/**/*.scala"]),
+    deps = ["@third_party//3rdparty/jvm/com/typesafe/akka:akka_actor", "@scala_stm//jar"],
+    resources = ["src/main/resources/reference.conf"],
+)
+""")

@@ -1,5 +1,11 @@
 ## Bazel infrastructure for Scala
 
+Scala's usually built with [SBT, and this is not great](https://www.lihaoyi.com/post/SowhatswrongwithSBT.html).
+
+Bazel, a build tool from Google, is [the worst build system, except for all the
+others](https://medium.com/windmill-engineering/bazel-is-the-worst-build-system-except-for-all-the-others-b369396a9e26).
+
+This repository contains all the infrastructure and examples required to allow you to build Scala code and its dependencies in Bazel.
 
 ### What's included?
 

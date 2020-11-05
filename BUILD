@@ -5,7 +5,12 @@ package(
 scala_binary(
     name = "amm",
     srcs = [],
-    deps = ["@third_party//3rdparty/jvm/com/lihaoyi:ammonite_2_12_8", "//src:mylib"],
+    deps = ["@third_party//3rdparty/jvm/com/lihaoyi:ammonite_2_12_8",
+            "@third_party//3rdparty/jvm/org/typelevel:cats_core",
+            "@third_party//3rdparty/jvm/org/typelevel:cats_effect",
+            "@third_party//3rdparty/jvm/org/typelevel:squants",
+            "@rediscala//:rediscala",
+            "//src:mylib",],
     main_class = "ammonite.Main"
 )
 
@@ -19,4 +24,3 @@ container_image(
     symlinks = {"/usr/bin/java": "/opt/java/openjdk/bin/java"},
     visibility = ["//visibility:public"],
 )
-
