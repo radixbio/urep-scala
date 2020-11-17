@@ -4,18 +4,184 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../..">
       <sourceFolder url="file://$MODULE_DIR$/../../.." isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../src/lib" isTestSource="false" packagePrefix="com.urepscala.mylib" />
       <excludeFolder url="file://$MODULE_DIR$/../.." />
       <excludeFolder url="file://$MODULE_DIR$/../../../bazel-bin" />
       <excludeFolder url="file://$MODULE_DIR$/../../../bazel-genfiles" />
       <excludeFolder url="file://$MODULE_DIR$/../../../bazel-out" />
       <excludeFolder url="file://$MODULE_DIR$/../../../bazel-testlogs" />
       <excludeFolder url="file://$MODULE_DIR$/../../../bazel-urep-scala" />
-      <excludeFolder url="file://$APPLICATION_HOME_DIR$" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../tools/idea-IC-202.7660.26" />
       <excludeFolder url="file://$MODULE_DIR$/../../../tools/intellij-bazel" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="net_sf_opencsv_opencsv-ijar_d7249104" level="project" />
+    <orderEntry type="library" name="com_typesafe_akka_akka_stream_2_12_666aba23" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_geny_2_12-ijar_d0a93ae8" level="project" />
+    <orderEntry type="library" name="downloaded_42d45958" level="project" />
+    <orderEntry type="library" name="junit_junit-ijar_2562ac88" level="project" />
+    <orderEntry type="library" name="org_slf4j_slf4j_api-ijar_9626c48" level="project" />
+    <orderEntry type="library" name="config-1.3.3_4788c1b8" level="project" />
+    <orderEntry type="library" name="uk_me_berndporr_iirj-ijar_a74a6a48" level="project" />
+    <orderEntry type="library" name="com_typesafe_akka_akka_actor_typed_2_12_de8bc16f" level="project" />
+    <orderEntry type="library" name="com_typesafe_akka_akka_stream_typed_2_12_7f804f98" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_os_lib_2_12_ff2dfc57" level="project" />
+    <orderEntry type="library" name="downloaded_ce792265" level="project" />
+    <orderEntry type="library" name="com_github_rwl_jtransforms-ijar_21dfa6dc" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_core-ijar_6684a088" level="project" />
+    <orderEntry type="library" name="org_typelevel_cats_effect_2_12_f9cf85fa" level="project" />
+    <orderEntry type="library" name="io_circe_circe_generic_extras_2_12_d83af497" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_ammonite_ops_2_12_195cf534" level="project" />
+    <orderEntry type="library" name="com_github_fommil_jniloader-ijar_29956ec8" level="project" />
+    <orderEntry type="library" name="libxt-driver-hjar_cda0e0be" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_native_system_java-ijar_f8d8ca28" level="project" />
+    <orderEntry type="library" name="org_slf4j_slf4j_nop-ijar_925f7d28" level="project" />
+    <orderEntry type="library" name="org_reactivestreams_reactive_streams-ijar_7c9b9e80" level="project" />
+    <orderEntry type="library" name="com_cibo_evilplot_2_12_43a7f59a" level="project" />
+    <orderEntry type="library" name="org_apache_commons_commons_math3-ijar_666b3934" level="project" />
+    <orderEntry type="library" name="org_typelevel_cats_core_2_12_9b68242c" level="project" />
+    <orderEntry type="library" name="net_sourceforge_f2j_arpack_combined_all_6e4768ee" level="project" />
+    <orderEntry type="library" name="com_typesafe_akka_akka_protobuf_v3_2_12-ijar_29fbf268" level="project" />
     <orderEntry type="library" name="scala-library-2.12.8_1798c1ef" level="project" />
     <orderEntry type="library" name="scala-reflect-2.12.8_4e6073f1" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_native_ref_java-ijar_ece7180e" level="project" />
+    <orderEntry type="library" name="io_circe_circe_generic_2_12_5b7e1499" level="project" />
+    <orderEntry type="library" name="libnetlib_native_ref_win_x86_64_jar_natives_f947349d" level="project" />
+    <orderEntry type="library" name="libjavassist_3fe1b00d" level="project" />
+    <orderEntry type="library" name="libnetlib_native_system_win_x86_64_jar_natives_f947349d" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_ammonite_repl_2_12_8_7b6588d6" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_netlib_native_system_win_x86_64_jar_natives-ijar_7f546e26" level="project" />
+    <orderEntry type="library" name="liborg_eclipse_xtend_lib_macro_4c7076dc" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_fansi_2_12-ijar_6346f496" level="project" />
+    <orderEntry type="library" name="com_thesamet_scalapb_scalapb_runtime_2_12_91f4272f" level="project" />
+    <orderEntry type="library" name="org_javassist_javassist-ijar_9e9d5468" level="project" />
+    <orderEntry type="library" name="org_scalameta_common_2_12_801194db" level="project" />
+    <orderEntry type="library" name="libguava_5cf5ef66" level="project" />
+    <orderEntry type="library" name="org_typelevel_cats_kernel_2_12_2df734ce" level="project" />
+    <orderEntry type="library" name="io_circe_circe_parser_2_12_1a4661c3" level="project" />
+    <orderEntry type="library" name="libjna_46fef0b8" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_requests_2_12-ijar_aa410e08" level="project" />
+    <orderEntry type="library" name="libconfig_92e09c65" level="project" />
+    <orderEntry type="library" name="scala_library_1c0e0f22" level="project" />
+    <orderEntry type="library" name="libiirj_9a4c9fd6" level="project" />
+    <orderEntry type="library" name="org_eclipse_lsp4j_org_eclipse_lsp4j_generator-ijar_5367a408" level="project" />
+    <orderEntry type="library" name="libjline_terminal_8ab67ca3" level="project" />
+    <orderEntry type="library" name="liborg_eclipse_lsp4j_generator_4bc70abc" level="project" />
+    <orderEntry type="library" name="com_typesafe_ssl_config_core_2_12_df6d8d86" level="project" />
+    <orderEntry type="library" name="scala-compiler-2.12.8_84a6f5eb" level="project" />
+    <orderEntry type="library" name="org_typelevel_squants_2_12_4d0eccea" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_netlib_native_ref_osx_x86_64_jar_natives-ijar_3d80d9a8" level="project" />
+    <orderEntry type="library" name="librequests_2_12_bda9e66b" level="project" />
+    <orderEntry type="library" name="org_scalanlp_breeze_2_12_796136a" level="project" />
+    <orderEntry type="library" name="libprotobuf_java_fc57643" level="project" />
+    <orderEntry type="library" name="org_scalameta_trees_2_12_d7cbe577" level="project" />
+    <orderEntry type="library" name="org_jline_jline_terminal_jna-ijar_a2784ed4" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_ammonite_2_12_8_fa8c6d40" level="project" />
+    <orderEntry type="library" name="libsourcecode_2_12_bda9e66b" level="project" />
+    <orderEntry type="library" name="com_chuusai_shapeless_2_12_43f336ea" level="project" />
+    <orderEntry type="library" name="org_spire_math_spire_macros_2_12_75c448ba" level="project" />
+    <orderEntry type="library" name="libslf4j_nop_8b353de8" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_netlib_native_system_osx_x86_64_jar_natives-ijar_c56f2db6" level="project" />
+    <orderEntry type="library" name="libjavaparser_core_32f6558f" level="project" />
+    <orderEntry type="library" name="scala_xml_3d26319a" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_ammonite_interp_api_2_12_8_d4066b96" level="project" />
+    <orderEntry type="library" name="libnetlib_native_system_win_i686_jar_natives_f947349d" level="project" />
+    <orderEntry type="library" name="org_scala_lang_modules_scala_collection_compat_2_12_90ba1a80" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_ammonite_interp_2_12_8_86f21351" level="project" />
+    <orderEntry type="library" name="scala_reflect_1c0e0f22" level="project" />
+    <orderEntry type="library" name="libnetlib_native_system_linux_x86_64_jar_natives_f947349d" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_sourcecode_2_12-ijar_3058a808" level="project" />
+    <orderEntry type="library" name="com_cibo_evilplot_math_2_12_cb750171" level="project" />
+    <orderEntry type="library" name="libnetlib_native_ref_linux_x86_64_jar_natives_f947349d" level="project" />
+    <orderEntry type="library" name="org_eclipse_xtext_org_eclipse_xtext_xbase_lib-ijar_8284a908" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_upickle_implicits_2_12_db635b73" level="project" />
+    <orderEntry type="library" name="scala_compiler_1c0e0f22" level="project" />
+    <orderEntry type="library" name="org_scalameta_fastparse_utils_2_12_cebd5a83" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_pprint_2_12-ijar_8815aba8" level="project" />
+    <orderEntry type="library" name="libnetlib_native_ref_linux_armhf_jar_natives_f947349d" level="project" />
+    <orderEntry type="library" name="com_google_guava_guava-ijar_2b050f90" level="project" />
+    <orderEntry type="library" name="liborg_eclipse_lsp4j_jsonrpc_4bc70abc" level="project" />
+    <orderEntry type="library" name="libnetlib_native_system_linux_armhf_jar_natives_f947349d" level="project" />
+    <orderEntry type="library" name="io_circe_circe_jawn_2_12_ce83d6b4" level="project" />
+    <orderEntry type="library" name="libnetlib_native_system_linux_i686_jar_natives_f947349d" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_fastparse_2_12-ijar_6e57d2ba" level="project" />
+    <orderEntry type="library" name="libfastparse_2_12_bda9e66b" level="project" />
+    <orderEntry type="library" name="libnative_system_java_f947349d" level="project" />
+    <orderEntry type="library" name="org_scalanlp_breeze_natives_2_12_1f04e50d" level="project" />
+    <orderEntry type="library" name="libnative_ref_java_f947349d" level="project" />
+    <orderEntry type="library" name="libgson_c6cb4af5" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_netlib_native_ref_linux_x86_64_jar_natives-ijar_edc97a68" level="project" />
+    <orderEntry type="library" name="libarpack_combined_all_b73850b9" level="project" />
+    <orderEntry type="library" name="libnetlib_native_ref_osx_x86_64_jar_natives_f947349d" level="project" />
+    <orderEntry type="library" name="libslf4j_api_8b353de8" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_netlib_native_ref_linux_i686_jar_natives-ijar_9d5228" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_netlib_native_system_win_i686_jar_natives-ijar_35859b6e" level="project" />
+    <orderEntry type="library" name="com_thesamet_scalapb_lenses_2_12_3cd98986" level="project" />
+    <orderEntry type="library" name="scala_parser_combinators_3d26319a" level="project" />
+    <orderEntry type="library" name="io_circe_circe_core_2_12_35993c83" level="project" />
+    <orderEntry type="library" name="com_typesafe_akka_akka_slf4j_2_12_6d85ba4c" level="project" />
+    <orderEntry type="library" name="com_github_javaparser_javaparser_core-ijar_34468808" level="project" />
+    <orderEntry type="library" name="libammonite_terminal_2_12_bda9e66b" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_netlib_native_ref_win_x86_64_jar_natives-ijar_bee708a8" level="project" />
+    <orderEntry type="library" name="libnetlib_native_ref_linux_i686_jar_natives_f947349d" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_netlib_native_system_linux_x86_64_jar_natives-ijar_f2a82436" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_upickle_2_12_79b01782" level="project" />
+    <orderEntry type="library" name="org_jline_jline_terminal-ijar_dab92218" level="project" />
+    <orderEntry type="library" name="libscalaparse_2_12_bda9e66b" level="project" />
+    <orderEntry type="library" name="liborg_eclipse_xtext_xbase_lib_4c707822" level="project" />
+    <orderEntry type="library" name="libpprint_2_12_bda9e66b" level="project" />
+    <orderEntry type="library" name="org_typelevel_machinist_2_12_3b5147e1" level="project" />
+    <orderEntry type="library" name="libnetlib_native_system_osx_x86_64_jar_natives_f947349d" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_ammonite_terminal_2_12-ijar_7716c2a6" level="project" />
+    <orderEntry type="library" name="libinterface_76928a4e" level="project" />
+    <orderEntry type="library" name="org_spire_math_spire_2_12_27fc312" level="project" />
+    <orderEntry type="library" name="protobuf-java-3.10.0_2781c1e6" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_ujson_2_12_a21b1074" level="project" />
+    <orderEntry type="library" name="libjniloader_ed1f5ada" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_netlib_native_ref_win_i686_jar_natives-ijar_fd6ba968" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_netlib_native_system_linux_armhf_jar_natives-ijar_1861e2c8" level="project" />
+    <orderEntry type="library" name="org_eclipse_xtend_org_eclipse_xtend_lib_macro-ijar_b81f368" level="project" />
+    <orderEntry type="library" name="org_eclipse_lsp4j_org_eclipse_lsp4j_jsonrpc-ijar_371c1248" level="project" />
+    <orderEntry type="library" name="libcommons_math3_c50a482" level="project" />
+    <orderEntry type="library" name="net_java_dev_jna_jna-ijar_96eeb052" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_ammonite_repl_api_2_12_8_cf09969b" level="project" />
+    <orderEntry type="library" name="libjline_terminal_jna_8ab67ca3" level="project" />
+    <orderEntry type="library" name="libjunit_b1c6851e" level="project" />
+    <orderEntry type="library" name="org_scala_lang_modules_scala_java8_compat_2_12_1f682ba4" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_scalaparse_2_12-ijar_b8948428" level="project" />
+    <orderEntry type="library" name="org_scalactic_scalactic_2_12_549e8b75" level="project" />
+    <orderEntry type="library" name="ch_epfl_scala_bsp4j-ijar_eadb55a8" level="project" />
+    <orderEntry type="library" name="org_typelevel_jawn_parser_2_12_57cb301d" level="project" />
+    <orderEntry type="library" name="scala-xml_2.12-1.0.5_4459274b" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_upickle_core_2_12_a30e1d2" level="project" />
+    <orderEntry type="library" name="liball_pom_f947349d" level="project" />
+    <orderEntry type="library" name="org_scalameta_fastparse_2_12_2b7f82f5" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_ammonite_runtime_2_12_8_4f891f07" level="project" />
+    <orderEntry type="library" name="libcore_f947349d" level="project" />
+    <orderEntry type="library" name="libjline_reader_8ab67ca3" level="project" />
+    <orderEntry type="library" name="org_typelevel_macro_compat_2_12_17fb93f0" level="project" />
+    <orderEntry type="library" name="libakka_protobuf_v3_2_12_1c3e626a" level="project" />
+    <orderEntry type="library" name="org_jline_jline_reader-ijar_d65d6166" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_ammonite_util_2_12_ac1232aa" level="project" />
+    <orderEntry type="library" name="io_circe_circe_numbers_2_12_9366e186" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_netlib_native_system_linux_i686_jar_natives-ijar_2685ee7e" level="project" />
+    <orderEntry type="library" name="libgeny_2_12_bda9e66b" level="project" />
+    <orderEntry type="library" name="org_scalanlp_breeze_macros_2_12_bf5b6562" level="project" />
+    <orderEntry type="library" name="com_lihaoyi_upack_2_12_d71ae263" level="project" />
+    <orderEntry type="library" name="libnetlib_native_ref_win_i686_jar_natives_f947349d" level="project" />
+    <orderEntry type="library" name="org_eclipse_xtend_org_eclipse_xtend_lib-ijar_d9b6148" level="project" />
+    <orderEntry type="library" name="com_typesafe_akka_akka_actor_2_12_880a193a" level="project" />
+    <orderEntry type="library" name="libreactive_streams_5b362adf" level="project" />
+    <orderEntry type="library" name="io_get_coursier_interface-ijar_d6b94a68" level="project" />
+    <orderEntry type="library" name="libjtransforms_f2bfd5b9" level="project" />
+    <orderEntry type="library" name="scala-parser-combinators_2.12-1.0.4_6e9c8fe3" level="project" />
+    <orderEntry type="library" name="liborg_eclipse_xtend_lib_4c7076dc" level="project" />
+    <orderEntry type="library" name="com_github_fommil_netlib_netlib_native_ref_linux_armhf_jar_natives-ijar_edd96bf8" level="project" />
+    <orderEntry type="library" name="libbsp4j_d4ec2482" level="project" />
+    <orderEntry type="library" name="com_github_scopt_scopt_2_12_fb16e46c" level="project" />
+    <orderEntry type="library" name="libopencsv_ad01c142" level="project" />
+    <orderEntry type="library" name="libfansi_2_12_bda9e66b" level="project" />
+    <orderEntry type="library" name="com_google_code_gson_gson-ijar_eb406608" level="project" />
   </component>
 </module>

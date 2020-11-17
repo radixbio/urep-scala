@@ -164,6 +164,11 @@ http_jar(
     sha256 = "307d61bbbc4e6ed33881646f23140ac73d71a508452abdbb8da689e64a1e4d93"
 )
 
+http_jar(
+    name = "sonopyjava",
+    url = "https://github.com/mikex86/SonopyJava/releases/download/v1.0-SNAPSHOT/SonopyJava-1.0-SNAPSHOT.jar"
+)
+
 new_git_repository(name = "rediscala",
                    remote = "https://github.com/itdaniher/rediscala.git",
                    branch = "master",
@@ -179,3 +184,28 @@ scala_library(
     resources = ["src/main/resources/reference.conf"],
 )
 """)
+
+all_content = """filegroup(name = "all", srcs = glob(["**"]), visibility = ["//visibility:public"])"""
+
+http_archive(
+   name = "rules_foreign_cc",
+   strip_prefix = "rules_foreign_cc-master",
+   url = "https://github.com/bazelbuild/rules_foreign_cc/archive/master.zip",
+)
+
+load("@rules_foreign_cc//:workspace_definitions.bzl", "rules_foreign_cc_dependencies")
+
+rules_foreign_cc_dependencies()
+
+http_jar(
+    name = "jna",
+    url = "https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.6.0/jna-5.6.0.jar"
+)
+
+http_archive(
+    name = "xt_audio",
+    urls = ["https://github.com/sjoerdvankreel/xt-audio/archive/v1.0.6.tar.gz"],
+    strip_prefix = "xt-audio-1.0.6",
+    build_file = "@//:xt-audio.BUILD",
+)
+

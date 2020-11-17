@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org_reactivestreams_reactive_streams-ijar_7c9b9e80">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.cache/bazel/_bazel_name/0f392d4f227f7735cc2ffb1555d4a4e9/execroot/__main__/bazel-out/k8-fastbuild/bin/external/org_reactivestreams_reactive_streams/jar/_ijar/jar/external/org_reactivestreams_reactive_streams/jar/org_reactivestreams_reactive_streams-ijar.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

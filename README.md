@@ -145,3 +145,7 @@ TODO: add this as a bazel rule :)
 install the plugin (built?) and settings (from releases), cross your fingers
 
 TODO: add these steps as a bazel rule :)
+
+Bonus:
+
+* check out [Recaf](https://github.com/Col-E/Recaf/releases/download/2.12.0/recaf-2.12.0-J8-jar-with-dependencies.jar) and poke around the inside of the freshly built `.jar`s

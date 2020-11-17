@@ -3,6 +3,9 @@ options:
     "load(\"@io_bazel_rules_scala//scala:scala.bzl\", \"scala_library\")" ]
   languages: [ "java", "scala:2.12.8" ]
   resolvers:
+    - id: "bintray"
+      type: "default"
+      url: https://dl.bintray.com/cibotech/public/
     - id: "mavencentral"
       type: "default"
       url: https://repo.maven.apache.org/maven2/
@@ -12,7 +15,16 @@ options:
   strictVisibility: true
 
 dependencies:
+  com.cibo:
+    evilplot:
+      lang: scala
+      modules: [ "", "math", "repl" ]
+      version: "0.6.2"
+
   com.lihaoyi:
+    ammonite-ops:
+      lang: scala
+      version: "2.2.0"
     ammonite_2.12.8:
       lang: scala/unmangled
       version: "2.2.0"
@@ -29,7 +41,7 @@ dependencies:
     akka:
       lang: scala
       modules: [ "actor", "actor-testkit-typed", "actor-typed", "cluster-typed",
-        "persistence-typed", "stream-typed", "testkit" ]
+        "persistence-typed", "stream", "stream-typed", "testkit" ]
       version: "2.6.8"
     akka-http:
       lang: scala
@@ -60,7 +72,7 @@ dependencies:
   io.circe:
     circe:
       lang: scala
-      modules: [ "core", "fs2", "generic", "generic-extras", "literal", "optics", "parser" ]
+      modules: [ "core", "generic", "generic-extras", "literal", "optics", "parser" ]
       version: "0.13.0"
     circe-derivation:
       lang: scala
@@ -115,6 +127,12 @@ dependencies:
       lang: scala
       version: "7.3.2"
 
+  org.slf4j:
+    slf4j:
+      lang: java
+      modules: [ "api", "nop", "simple" ]
+      version: "1.7.30"
+
   org.typelevel:
     cats:
       lang: scala
@@ -123,6 +141,11 @@ dependencies:
     squants:
       lang: scala
       version: "1.3.0"
+
+  uk.me.berndporr:
+    iirj:
+      lang: java
+      version: "1.1"
 
 replacements:
   org.scala-lang:

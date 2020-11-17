@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libjline_terminal_8ab67ca3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.cache/bazel/_bazel_name/0f392d4f227f7735cc2ffb1555d4a4e9/execroot/__main__/bazel-out/k8-fastbuild/bin/external/third_party/3rdparty/jvm/org/jline/libjline_terminal.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

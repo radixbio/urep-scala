@@ -1,3 +1,5 @@
+package com.urepscala.mypackage
+
 import com.urepscala.mylib._
 
 object Main {

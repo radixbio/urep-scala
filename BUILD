@@ -5,15 +5,18 @@ package(
 scala_binary(
     name = "amm",
     srcs = [],
-    deps = ["@third_party//3rdparty/jvm/com/lihaoyi:ammonite_2_12_8",
-            "@third_party//3rdparty/jvm/org/typelevel:cats_core",
-            "@third_party//3rdparty/jvm/org/typelevel:cats_effect",
-            "@third_party//3rdparty/jvm/org/typelevel:squants",
-            "@rediscala//:rediscala",
-            "//src:mylib",],
-    main_class = "ammonite.Main"
+    data = ["//:predef.sc"],
+    main_class = "ammonite.Main",
+    deps = [
+        "//src:mylib",
+        "@third_party//3rdparty/jvm/com/lihaoyi:ammonite_2_12_8",
+        "@third_party//3rdparty/jvm/org/typelevel:cats_core",
+        "@third_party//3rdparty/jvm/org/typelevel:cats_effect",
+        "@third_party//3rdparty/jvm/org/typelevel:squants",
+        "@xt_audio//:xt-driver",
+        "@sonopyjava//jar",
+    ],
 )
-
 
 # this is the base docker image used for all scala_image targets
 # adoptopenjdk is great, but their images do not have the `java` executable at the path expected by rules_docker
