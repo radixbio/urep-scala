@@ -11,39 +11,13 @@ http_archive(
     url = "https://github.com/bazelbuild/bazel-skylib/releases/download/{}/bazel-skylib-{}.tar.gz".format(skylib_version, skylib_version),
 )
 
-rules_scala_version = "eabb1d28fb288fb5b15857260f87818dda5a97c8"  # update this as needed
+rules_scala_version = "scala_2_13"  # update this as needed
 
 http_archive(
     name = "io_bazel_rules_scala",
-    sha256 = "c75f3f6725369171f7a670767a28fd488190070fc9f31d882d9b7a61caffeb26",
     strip_prefix = "rules_scala-%s" % rules_scala_version,
     type = "zip",
-    url = "https://github.com/bazelbuild/rules_scala/archive/%s.zip" % rules_scala_version,
-)
-
-load(
-    "@io_bazel_rules_scala//scala/scalafmt:scalafmt_repositories.bzl",
-    "scalafmt_default_config",
-    "scalafmt_repositories",
-)
-
-scalafmt_repositories()
-
-scalafmt_default_config()
-
-bind(
-    name = "io_bazel_rules_scala_dependency_scalap_scalap",
-    actual = "//3rdparty/jvm/org/scala-lang:scalap",
-)
-
-bind(
-    name = "io_bazel_rules_scala_dependency_scalatest_scalatest",
-    actual = "//3rdparty/jvm/org/scalatest:scalatest",
-)
-
-bind(
-    name = "io_bazel_rules_scala_dependency_scala_scalactic_scalactic",
-    actual = "//3rdparty/jvm/org/scalactic:scalactic",
+    url = "https://github.com/liucijus/rules_scala/archive/scala_2_13.zip"
 )
 
 git_repository(
@@ -54,10 +28,13 @@ git_repository(
 )
 
 load("@rules_pkg//:deps.bzl", "rules_pkg_dependencies")
+load("@io_bazel_rules_scala//:scala_config.bzl", "scala_config")
+scala_config(scala_version="2.13.8")
 load(
     "@io_bazel_rules_scala//scala:toolchains.bzl",
     "scala_register_toolchains",
 )
+
 
 scala_register_toolchains()
 
@@ -66,37 +43,7 @@ load(
     "scala_repositories",
 )
 
-scala_repositories(
-    scala_extra_jars = {
-        "2.12": {
-            "scalatest": {
-                "version": "3.0.8",
-                "sha256": "a4045cea66f3eaab525696f3000d7d610593778bd070e98349a7066f872844cd",
-            },
-            "scalactic": {
-                "version": "3.0.8",
-                "sha256": "5f9ad122f54e9a0112ff4fcaadfb2802d8796f5dde021caa4c831067fca68469",
-            },
-            "scala_xml": {
-                "version": "1.0.5",
-                "sha256": "035015366f54f403d076d95f4529ce9eeaf544064dbc17c2d10e4f5908ef4256",
-            },
-            "scala_parser_combinators": {
-                "version": "1.0.4",
-                "sha256": "282c78d064d3e8f09b3663190d9494b85e0bb7d96b0da05994fe994384d96111",
-            },
-        },
-    },
-    scala_version_shas = (
-        "2.12.8",
-        {
-            "scala_compiler": "f34e9119f45abd41e85b9e121ba19dd9288b3b4af7f7047e86dc70236708d170",
-            "scala_library": "321fb55685635c931eba4bc0d7668349da3f2c09aee2de93a70566066ff25c28",
-            "scala_reflect": "4d6405395c4599ce04cea08ba082339e3e42135de9aae2923c9f5367e957315a",
-            "scalajs_compiler": "fc54c1a5f08598c3aef8b4dd13cf482323b56cb416547da9944655d7c53eae32",
-        },
-    ),
-)
+scala_repositories()
 
 protobuf_version = "3.11.3"
 
@@ -108,10 +55,19 @@ http_archive(
     strip_prefix = "protobuf-%s" % protobuf_version,
     url = "https://github.com/protocolbuffers/protobuf/archive/v%s.tar.gz" % protobuf_version,
 )
+load(
+    "@io_bazel_rules_scala//scala/scalafmt:scalafmt_repositories.bzl",
+    "scalafmt_default_config",
+    "scalafmt_repositories",
+)
+
+scalafmt_repositories()
+
+scalafmt_default_config()
+
 
 load(
     "@io_bazel_rules_scala//scala:scala_cross_version.bzl",
-    "default_scala_major_version",
     "scala_mvn_artifact",
 )
 load(

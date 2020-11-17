@@ -5,7 +5,7 @@ package(
 scala_binary(
     name = "amm",
     srcs = [],
-    deps = ["@third_party//3rdparty/jvm/com/lihaoyi:ammonite_2_12_8", "//src:mylib"],
+    deps = ["@third_party//3rdparty/jvm/com/lihaoyi:ammonite_2_13_3", "//src:mylib"],
     main_class = "ammonite.Main"
 )
 
