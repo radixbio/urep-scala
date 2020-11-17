@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="org_scala_lang_modules_scala_collection_compat_2_12_90ba1a80">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.cache/bazel/_bazel_name/0f392d4f227f7735cc2ffb1555d4a4e9/external/org_scala_lang_modules_scala_collection_compat_2_12/jar/org_scala_lang_modules_scala_collection_compat_2_12.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -1,7 +1,7 @@
 options:
   buildHeader: [ "load(\"@io_bazel_rules_scala//scala:scala_import.bzl\", \"scala_import\")",
     "load(\"@io_bazel_rules_scala//scala:scala.bzl\", \"scala_library\")" ]
-  languages: [ "java", "scala:2.12.8" ]
+  languages: [ "java", "scala:2.13.3" ]
   resolvers:
     - id: "bintray"
       type: "default"
@@ -19,13 +19,13 @@ dependencies:
     evilplot:
       lang: scala
       modules: [ "", "math", "repl" ]
-      version: "0.6.2"
+      version: "0.8.0"
 
   com.lihaoyi:
     ammonite-ops:
       lang: scala
       version: "2.2.0"
-    ammonite_2.12.8:
+    ammonite_2.13.3:
       lang: scala/unmangled
       version: "2.2.0"
     os-lib:
@@ -90,37 +90,22 @@ dependencies:
   org.scala-lang:
     scalap:
       lang: java
-      version: "2.12.10"
+      version: "2.13.3"
 
   org.scala-lang.modules:
     scala-parser-combinators:
       lang: scala
       version: "1.1.2"
 
-  org.scalacheck:
-    scalacheck:
-      lang: scala
-      version: "1.14.1"
-
-  org.scalactic:
-    scalactic:
-      lang: scala
-      version: "3.0.8"
-
   org.scalameta:
     scalameta:
       lang: scala
-      version: "4.1.0"
+      version: "4.3.24"
 
   org.scalatest:
     scalatest:
       lang: scala
       version: "3.0.8"
-
-  org.scalatestplus:
-    scalatestplus-scalacheck:
-      lang: scala
-      version: "3.1.0.0-RC2"
 
   org.scalaz:
     scalaz-core:
@@ -140,7 +125,7 @@ dependencies:
       version: "2.2.0"
     squants:
       lang: scala
-      version: "1.3.0"
+      version: "1.7.0"
 
   uk.me.berndporr:
     iirj:

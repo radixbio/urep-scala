@@ -87,7 +87,7 @@ object Main extends App {
     // populate it
     System.arraycopy(input, 0, outputBuffer.array(), 0, frames)
     // get an ArrayBuffer
-    val outputArray = outputBuffer.array.to[ArrayBuffer]
+    val outputArray = outputBuffer.array.to(ArrayBuffer)
     // wait for up to maxDuration for akka to enqueue data
     val offer = queue.offerBlocking(outputArray, maxDuration)
   }

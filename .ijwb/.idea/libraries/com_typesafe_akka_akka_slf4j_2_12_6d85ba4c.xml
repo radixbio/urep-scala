@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="com_typesafe_akka_akka_slf4j_2_12_6d85ba4c">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.cache/bazel/_bazel_name/0f392d4f227f7735cc2ffb1555d4a4e9/external/com_typesafe_akka_akka_slf4j_2_12/jar/com_typesafe_akka_akka_slf4j_2_12.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="com_thesamet_scalapb_scalapb_runtime_2_12_91f4272f">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.cache/bazel/_bazel_name/0f392d4f227f7735cc2ffb1555d4a4e9/external/com_thesamet_scalapb_scalapb_runtime_2_12/jar/com_thesamet_scalapb_scalapb_runtime_2_12.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

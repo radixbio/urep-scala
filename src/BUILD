@@ -19,7 +19,6 @@ scala_binary(
         "main/Main3.scala",
     ],
     main_class = "Main",
-    scalacopts = ["-Ypartial-unification"],
     deps = [
         ":mylib",
         "@jna//jar",
@@ -46,7 +45,6 @@ scala_binary(
         "main/Main2.scala",
     ],
     main_class = "Main",
-    scalacopts = ["-Ypartial-unification"],
     deps = [
         ":mylib",
         "@jna//jar",

@@ -9,7 +9,7 @@ scala_binary(
     main_class = "ammonite.Main",
     deps = [
         "//src:mylib",
-        "@third_party//3rdparty/jvm/com/lihaoyi:ammonite_2_12_8",
+        "@third_party//3rdparty/jvm/com/lihaoyi:ammonite_2_13_3",
         "@third_party//3rdparty/jvm/org/typelevel:cats_core",
         "@third_party//3rdparty/jvm/org/typelevel:cats_effect",
         "@third_party//3rdparty/jvm/org/typelevel:squants",

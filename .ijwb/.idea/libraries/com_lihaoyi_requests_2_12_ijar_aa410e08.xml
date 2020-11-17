@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="com_lihaoyi_requests_2_12-ijar_aa410e08">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.cache/bazel/_bazel_name/0f392d4f227f7735cc2ffb1555d4a4e9/execroot/__main__/bazel-out/k8-fastbuild/bin/external/com_lihaoyi_requests_2_12/jar/_ijar/jar/external/com_lihaoyi_requests_2_12/jar/com_lihaoyi_requests_2_12-ijar.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
