@@ -29,7 +29,7 @@ git_repository(
 
 load("@rules_pkg//:deps.bzl", "rules_pkg_dependencies")
 load("@io_bazel_rules_scala//:scala_config.bzl", "scala_config")
-scala_config(scala_version="2.13.8")
+scala_config(scala_version="2.13.3")
 load(
     "@io_bazel_rules_scala//scala:toolchains.bzl",
     "scala_register_toolchains",
